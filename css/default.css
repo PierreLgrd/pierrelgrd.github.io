@@ -1,12 +1,4 @@
 /*
-=====================================================================
-*   Woo v1.0 Default Stylesheet
-*   url: styleshout.com
-*   05-02-2014
-=====================================================================
-
-TOC:
-
 a. Webfonts and Icon fonts
 b. Preloader
 c. Reset
@@ -23,7 +15,6 @@ d. Default Styles
    2. Misc
 
 =====================================================================  */
-
 
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
@@ -60,9 +51,6 @@ d. Default Styles
 
 /* ------------------------------------------------------------------
 /* c. Reset
-      Adapted from:
-      Normalize.css - https://github.com/necolas/normalize.css/
-      HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
 html, body, div, span, object, iframe,
@@ -149,9 +137,6 @@ table {
 
 /* ------------------------------------------------------------------ */
 /* d. Default and Basic Styles
-      Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
-      Typeplate Typographic Starter Kit - http://typeplate.com/
 /* ------------------------------------------------------------------ */
 
 /* 1. Basic  ------------------------------------------------------- */
@@ -167,14 +152,13 @@ table {
 html { font-size: 62.5%; }
 
 body {
-   background: #fff;
-   font-family: 'opensans-regular', sans-serif;
-   font-weight: normal;
-   font-size: 15px;
-   line-height: 30px;
-	color: #838C95;
-
-   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	background: #fff;
+	font-family: 'opensans-regular', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 30px;
+	color: #707880;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -216,15 +200,14 @@ blockquote {
    position: relative;
 }
 blockquote:before {
-   content: "\201C";
-   opacity: 0.45;
-   font-size: 80px;
-   line-height: 0px;
-   margin: 0;
-   font-family: arial, sans-serif;
-
-   position: absolute;
-   top:  30px;
+	content: "\201C";
+	opacity: 0.45;
+	font-size: 80px;
+	line-height: 0px;
+	margin: 0;
+	font-family: arial, sans-serif;
+	position: absolute;
+	top:  30px;
 	left: 0;
 }
 blockquote p {
@@ -300,14 +283,13 @@ abbr:hover { cursor: help; }
 	padding: 14px 6px 0 0;
 	font-size: 84px;
 	font-family: /* Copperplate */ 'montserrat-bold', sans-serif;
-   line-height: 60px;
+	line-height: 60px;
 	text-indent: 0;
 	background: transparent;
 	color: inherit;
 }
 
 hr { border: solid #E8E8E8; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
-
 
 /*  3. Links  ------------------------------------------------------- */
 
@@ -437,21 +419,18 @@ dd { margin: 0 0 0 20px; }
    padding: 0;
 }
 .pagination .page-numbers {
-   font: 15px/18px 'opensans-bold', sans-serif;
-   display: inline-block;
-   padding: 6px 10px;
-   margin-right: 3px;
-   margin-bottom: 6px;
+	font: 15px/18px 'opensans-bold', sans-serif;
+	display: inline-block;
+	padding: 6px 10px;
+	margin-right: 3px;
+	margin-bottom: 6px;
 	color: #6E757C;
 	background-color: #E6E8EB;
-
 	-webkit-transition: all 200ms ease-in-out;
-	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
 	-ms-transition: all 200ms ease-in-out;
 	transition: all 200ms ease-in-out;
-
-   border-radius: 3px;
+	border-radius: 3px;
 }
 .pagination .page-numbers:hover {
    background: #838A91;
@@ -490,27 +469,24 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 14px/24px 'montserrat-bold', sans-serif;
-   background: #11ABB0;
-   color: #fff;
-   display: inline-block;   
+	font: 14px/24px 'montserrat-bold', sans-serif;
+	background: #0084FF;
+	color: #fff;
+	display: inline-block;   
 	text-decoration: none;
-   letter-spacing: 0;   
+	letter-spacing: 0;   
 	padding: 12px 20px;
 	margin-bottom: 18px;
-   border: none;
-   cursor: pointer;
-   height: auto;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-
-   -webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
+	border: none;
+	cursor: pointer;
+	height: auto;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
-
-   border-radius: 3px;
+	border-radius: 3px;
 }
 
 .button:hover,
@@ -518,7 +494,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-   background: #14D0D6;
+   background: #00aeff;
    color: #fff;
 }
 
@@ -560,31 +536,26 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-   display: block;
-   padding: 18px 15px;
-   margin: 0 0 24px 0;
-   border: 0;
-   outline: none;
-   vertical-align: middle;
-   min-width: 225px;
+	display: block;
+	padding: 18px 15px;
+	margin: 0 0 24px 0;
+	border: 0;
+	outline: none;
+	vertical-align: middle;
+	min-width: 225px;
 	max-width: 100%;
-   font-size: 15px;
-   line-height: 24px;
+	font-size: 15px;
+	line-height: 24px;
 	color: #647373;
 	background: #D3D9D9;
-   border-radius: 3px;
-
+	border-radius: 3px;
 }
-
-/* select { padding: 0;
-   width: 220px;
-   } */
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-   color: #B3B7BC;
+	color: #B3B7BC;
 	background-color: #383D41;
 }
 
@@ -592,10 +563,10 @@ textarea { min-height: 220px; }
 
 label,
 legend {
-   font: 16px/24px 'opensans-bold', sans-serif;
+	font: 16px/24px 'opensans-bold', sans-serif;
 	margin: 12px 0;
-   color: #3d4145;
-   display: block;
+	color: #3d4145;
+	display: block;
 }
 label span,
 legend span {
@@ -744,7 +715,6 @@ properly.
 /* screenwidth less than 768px - mobile/smaller tablets
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-
    .row {
 	   width: 480px;
 	   margin: 0 auto;
@@ -779,17 +749,13 @@ properly.
 /* screenwidth less than or equal 480px - mobile wide
 --------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {
-
    .row { width: auto; }
-
 }
 
 /* larger screens
 --------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
-
    .wide .row { max-width: 1180px; }
-
 }
 
 /* ------------------------------------------------------------------ */
@@ -799,7 +765,6 @@ properly.
 /*  1. Clearing
     (http://nicolasgallagher.com/micro-clearfix-hack/
 --------------------------------------------------------------------- */
-
 .cf:before,
 .cf:after {
     content: " ";
@@ -815,7 +780,6 @@ properly.
 .half-bottom { margin-bottom: 12px !important; }
 .add-bottom { margin-bottom: 24px !important; }
 .no-border { border: none; }
-
 .text-center  { text-align: center !important; }
 .text-left    { text-align: left !important; }
 .text-right   { text-align: right !important; }
@@ -826,7 +790,3 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
-
-
-
