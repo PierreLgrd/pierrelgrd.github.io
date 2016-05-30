@@ -121,7 +121,7 @@
       right: 36px;
    }
 	#nav-wrap > a:before {
-	   font-family: 'FontAwesome';
+	  font-family: 'FontAwesome';
       content: "\f0c9";
       color: #243B5C;
       margin: 0;
