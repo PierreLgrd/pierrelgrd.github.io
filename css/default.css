@@ -1,6 +1,5 @@
 /*
 a. Webfonts and Icon fonts
-b. Preloader
 c. Reset
 d. Default Styles
    1. Basic
@@ -24,30 +23,6 @@ d. Default Styles
 @import url("fontello/css/fontello.css");
 @import url("font-awesome/css/font-awesome.min.css");
 
-
-/* ------------------------------------------------------------------ */
-/* b. Preloader
- ------------------------------------------------------------------ */
-
-#preloader  {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background: #fff;
-   z-index: 99999;
-   height: 100%;
-}
-#status  {    
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   width: 64px;
-   height: 64px;
-   margin: -32px 0 0 -32px;  
-   padding: 0;    
-}
 
 /* ------------------------------------------------------------------
 /* c. Reset
@@ -247,7 +222,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
 	opacity: 0.45;
 	position: absolute;
 	font-size: 80px;
-   font-family: Arial, Sans-Serif;
+	font-family: Arial, Sans-Serif;
 }
 .pull-quote:before {
 	content: "\201C";
@@ -268,10 +243,10 @@ blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Abbreviations */
 abbr {
-   font-family: 'opensans-bold', sans-serif;
+	font-family: 'opensans-bold', sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
-   letter-spacing: .5px;
+	letter-spacing: .5px;
 	color: gray;
 }
 abbr:hover { cursor: help; }
@@ -297,9 +272,7 @@ a, a:visited {
    text-decoration: none;
    outline: 0;
    color: #11ABB0;
-
    -webkit-transition: color .3s ease-in-out;
-   -moz-transition: color .3s ease-in-out;
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
@@ -353,8 +326,8 @@ li p { }
 	display: inline-block;
 	font-size: 22px;
 	font-family: 'opensans-bold', sans-serif;
-   border: none;
-   color: #313131;
+	border: none;
+	color: #313131;
 }
 .stats-tabs li a:hover {
    color:#11ABB0;
@@ -364,7 +337,7 @@ li p { }
 	margin: 6px 0 0 0;
 	font-size: 13px;
 	font-family: 'opensans-regular', sans-serif;
-   color: #8B9798;
+	color: #8B9798;
 }
 
 /* definition list */
@@ -716,16 +689,16 @@ properly.
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
    .row {
-	   width: 480px;
-	   margin: 0 auto;
-      padding: 0;
+		width: 480px;
+		margin: 0 auto;
+		padding: 0;
 	}
    .column, .columns {
-	   width: auto !important;      
-	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
-      padding: 0 30px;
+		width: auto !important;      
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 30px;
    }
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
 

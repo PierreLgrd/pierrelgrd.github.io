@@ -13,7 +13,6 @@
     	$('.js #hero .hero-image img').addClass("animated fadeInUpBig"); 
   	}) 
 
-
   	/*---------------------------------------------------- */
   	/* Mobile Menu
    ------------------------------------------------------ */  
@@ -46,35 +45,26 @@
    	if (nav.hasClass('mobile')) nav.fadeOut('fast');      
   	});
 
-
   	/*----------------------------------------------------*/
   	/* FitText Settings
   	------------------------------------------------------ */
   	setTimeout(function() {
-
-   	$('h1.responsive-headline').fitText(1.2, { minFontSize: '25px', maxFontSize: '40px' });
-
+   	$('h1.responsive-headline').fitText(1.5, { minFontSize: '25px', maxFontSize: '40px' });
   	}, 100);
-
 
   	/*----------------------------------------------------*/
   	/* Smooth Scrolling
   	------------------------------------------------------ */
   	$('.smoothscroll').on('click', function (e) {
-	 	
 	 	e.preventDefault();
-
-   	var target = this.hash,
+   		var target = this.hash,
     	$target = $(target);
-
     	$('html, body').stop().animate({
        	'scrollTop': $target.offset().top
       }, 800, 'swing', function () {
       	window.location.hash = target;
       });
-
   	});
-
 
   	/*----------------------------------------------------*/
   	/* Highlight the current section in the navigation bar
@@ -100,34 +90,11 @@
 		offset: '35%'
 	});
 
-
 	/*----------------------------------------------------*/
   	/* FitVids
   	/*----------------------------------------------------*/
    $(".fluid-video-wrapper").fitVids();
 
-
-   /*----------------------------------------------------*/
-  	/* Waypoints Animations
-   ------------------------------------------------------ */
-  	$('.js .design').waypoint(function() {
-   	$('.js .design .feature-media').addClass( 'animated pulse' );    
-  	}, { offset: 'bottom-in-view' });
-
-  	$('.js .responsive').waypoint(function() {
-   	$('.js .responsive .feature-media').addClass( 'animated pulse' );    
-  	}, { offset: 'bottom-in-view' });
-
-  	$('.js .cross-browser').waypoint(function() {
-   	$('.js .cross-browser .feature-media').addClass( 'animated pulse' ); 
-  	}, { offset: 'bottom-in-view' });
-
-  	$('.js #subscribe').waypoint(function() {
-   	$('.js #subscribe input[type="email"]').addClass( 'animated fadeInLeftBig show' ); 
-    	$('.js #subscribe input[type="submit"]').addClass( 'animated fadeInRightBig show' );   
-  	}, { offset: 'bottom-in-view' });
-
-  	
   	/*----------------------------------------------------*/
   	/* Flexslider
   	/*----------------------------------------------------*/
@@ -206,7 +173,6 @@
       $("#screenshots").find(".item-wrap a").attr("rel","prettyPhoto[pp_gal]");
 
       $("a[rel^='prettyPhoto']").prettyPhoto( {
-
       	animation_speed: 'fast', /* fast/slow/normal */
       	slideshow: false, /* false OR interval time in ms */
       	autoplay_slideshow: false, /* true/false */
@@ -225,10 +191,6 @@
       	keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
       	deeplinking: false,
       	social_tools: false
-
       }); 
-
     }
-
-
 })(jQuery);
